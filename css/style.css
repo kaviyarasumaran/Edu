@@ -79,8 +79,13 @@ nav .navigation ul li a {
     color: rgb(21, 21, 100);
     font-size: 16px;
     font-weight: 500;
+    transition: 0.3s ease-in-out;
 }
 
+
+nav .navigation ul li a:hover{
+    color: #FDC93B;
+}
 
 /* Home section styles */
 #home{
