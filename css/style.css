@@ -1,0 +1,607 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+span {
+    font-size: .9rem;
+    color: antiquewhite;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+/* Navigation styles */
+nav {
+    position: fixed;
+    width: 100%;
+    height: au11vhto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 4vh;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+} 
+
+nav img {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+}
+
+nav .navigation{
+    display: flex;
+}
+
+#menu-btn{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+#menu-close{
+    display: none;
+}
+
+nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* Home section styles */
+#home{
+    background-image: url("../assets/image-1.jpg");
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+#home h2 {
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p {
+    margin-top: 3rem;
+    width: 50%;
+    color: white;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+#home .btn {
+    margin-top: 2em;
+}
+
+#home a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home a.blue {
+    color: #ffffff;
+    background: rgb(21, 21, 100);
+    transition: all 0.3s ease-in-out;
+}
+
+#home a.blue:hover {
+    color: rgb(21, 21, 100);
+    background-color: white;
+}
+
+#home a.yellow {
+    color: #ffffff;
+    background-color: #FDC93B;
+    transition: all 0.3s ease-in-out;
+}
+
+#home a.yellow:hover {
+    color: #FDC93B;
+    background-color: #fff;
+}
+
+/* About us section styles */
+#about {
+    margin: 15rem;
+    text-align: center;
+}
+
+.abt-head {
+    color: rgb(46, 46, 59);
+    font-size: 1.2rem;
+}
+
+.abt-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+
+.abt-content {
+    text-align: start;
+    color: rgb(46, 46, 59);
+    flex: 1;
+    max-width: 600px;
+    margin: 0px 25px;
+    animation: fadeInUp 2s ease;
+}
+
+.abt-content p {
+    font-size: 2rem;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.abt-img {
+    flex: 1;
+    max-width: 600px;
+    margin: auto;
+    animation: fadeInRight 2s ease;
+}
+
+#about img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* After 12th section styles */
+#after-12 {
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+.base {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 5em;
+    animation: fadeInUp 2s ease;
+}
+
+.std-box {
+    background-color: #F9F9FF;
+    text-align: start;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.std-box:hover {
+    background-color: #FDC93B;
+    color: white;
+}
+
+.std-box i {
+    font-size: 2.3rem;
+    color: rgb(24, 24, 49);
+    padding: 1rem 1rem;
+}
+
+.std-box h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+    padding: 0 1rem;
+}
+
+.std-box p {
+    margin-top: 2em;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(46, 46, 59);
+    padding: 0 1rem;
+}
+
+.below {
+    margin-top: 5em;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Services section styles */
+#services {
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+.base {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 5em;
+    animation: fadeInUp 2s ease;
+}
+
+.std-box {
+    background-color: #F9F9FF;
+    text-align: start;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.std-box:hover {
+    background-color: #FDC93B;
+    color: white;
+}
+
+.std-box img {
+    font-size: 2.3rem;
+    color: rgb(24, 24, 49);
+    padding: 1rem 1rem;
+    width: 100px;
+    height: 100px;
+}
+
+.std-box h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+    padding: 0 1rem;
+}
+
+.std-box p {
+    margin-top: 2em;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(46, 46, 59);
+    padding: 0 1rem;
+}
+
+.below {
+    margin-top: 5em;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Contact section styling */
+#contact {
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+
+.outer-div,
+.left-side,
+.right-side,
+.left-side-form {
+    box-sizing: border-box;
+    animation: fadeInUp 2s ease;
+}
+
+.outer-div {
+    background-color: #FDC93B;
+    width: 100%;
+    height: 100%;
+}
+
+.left-side {
+    color: white;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-side-form {
+    padding: 2%;
+}
+
+.right-side {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.textarea {
+    height: 100px;
+    resize: none;
+}
+
+.submit {
+    margin-top: 2%;
+    position: relative;
+    background-color: white;
+    border-style: none;
+    /* border: 2px solid white; */
+    border-radius: 25px;
+    align-self: center;
+    transition: background-color 2s ease;
+}
+
+.submit:hover {
+    background-color: rgb(24, 24, 49);
+    color: white;
+    cursor: pointer;
+}
+
+.input,
+.textarea {
+    margin-top: 2%;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+img {
+    color: white;
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 600px) {
+    .outer-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-side {
+        width: 100%;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+
+    .input,
+    .textarea {
+        width: 100%;
+        padding: 4%;
+        box-sizing: border-box;
+    }
+
+    .submit {
+        padding: 2.5%;
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    img {
+        height: 90%;
+        width: 100%;
+        margin: 10% 0%;
+    }
+}
+
+@media (min-width: 601px) {
+    .outer-div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left-side {
+        width: 55%;
+    }
+
+    .right-side {
+        width: 45%;
+        margin: 2%;
+    }
+
+    .input,
+    .textarea {
+        width: 90%;
+        padding: 3%;
+    }
+
+    .submit {
+        padding: 1.5%;
+        width: 25%;
+    }
+
+    img {
+        height: 90%;
+        width: 90%;
+        align-self: center;
+    }
+}
+
+@media (max-width: 769px) {
+    nav {
+        height: 15vh;
+    }
+
+    nav img {
+        width: 70px;
+    }
+
+    #menu-btn {
+        display: initial;
+    }
+
+    #menu-close {
+        display: initial;
+        font-size: 1.6rem;
+        color: white;
+        padding: 30px 0 20px 20px;
+    }
+
+    nav .navigation ul {
+        position: absolute;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        height: 100vh;
+        background-color: rgba(17, 20, 104, 0.45);
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: 0.3s ease-in-out;
+    }
+
+    nav .navigation ul.active {
+        right: 0;
+    }
+
+    nav .navigation ul li {
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+    }
+
+    nav .navigation ul li a {
+        color: white;
+    }
+
+    #home {
+        padding: 0;
+    }
+
+    #home p {
+        width: 90%;
+    }
+
+    #after-12 {
+        padding: 8vw 4vw 0 4vw;
+    }
+
+    #services {
+        padding: 8vw 4vw 0 4vw;
+    }
+}
+
+@media (max-width: 567px) {
+    nav {
+        height: 15vh;
+    }
+}
+
+@media (max-width: 475px) {
+    nav {
+        height: 11vh;
+    }
+
+    nav img {
+        height: 10vh;
+    }
+
+    #about {
+        margin: 2rem;
+        text-align: center;
+    }
+
+    .abt-container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 65px auto;
+    }
+
+    .abt-content p {
+        font-size: 1.5rem;
+        line-height: 1.7;
+        margin-bottom: 40px;
+    }
+
+    .abt-head {
+        color: rgb(46, 46, 59);
+        font-size: 1.2rem;
+    }
+
+    .abt-img {
+        max-width: 600px;
+        margin: auto;
+        animation: fadeInRight 2s ease;
+    }
+
+    #after-12 {
+        margin: 2rem;
+        text-align: center;
+    }
+
+    #services {
+        margin: 2rem;
+        text-align: center;
+    }
+
+    #contact {
+        margin: 2rem;
+        text-align: center;
+    }
+}
+
+/* Hide carousel navigation on small screens */
+@media (max-width: 768px) {
+    .prev,
+    .next {
+        display: none;
+    }
+}
